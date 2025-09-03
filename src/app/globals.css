@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --sub: rgba(255, 255, 255, 0.5);
+  --btns: rgba(255, 255, 255, 0.04);
+  --border: #1f1f1f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sub: var(--sub);
+  --color-btns: var(--btns);
+  --font-Inter: var(--font-inter);
+  --color-border: var(--border);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+main {
+  background: url(/img/home/cloud_stars.png);
+}
+.home_text {
+  background: linear-gradient(180deg, #ffffff 0%, #bababa 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.footer_btn {
+  background: linear-gradient(
+    95.8deg,
+    rgba(14, 166, 94, 0.05) 21.18%,
+    rgba(14, 166, 94, 0) 54.7%
+  );
+  border-color: color-mix(
+    in hsl shorter hue,
+    hsl(154 9% 15% / 100%) 70%,
+    hsl(154 9% 15% / 0%) 30%
+  );
+
+}
+.line{
+    border-color: color-mix(in srgb, rgba(255, 255, 255, 0.06) 6%, rgba(31, 31, 31, 1) 60%);
+}
+.support_btn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      92deg,
+      rgba(130, 97, 226, 0.2) 15.83%,
+      rgba(23, 23, 23, 0.2) 63.01%
+    );
+
+  border-color: hsla(0, 0%, 100%, 0.06);
+}
+.pro_btn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(
+      92deg,
+      rgba(192, 112, 216, 0.3) 15.83%,
+      rgba(23, 23, 23, 0.3) 63.01%
+    ),
+    radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.hobby_btn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      92deg,
+      rgba(16, 141, 81, 0.2) 15.83%,
+      rgba(23, 23, 23, 0.2) 63.01%
+    );
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.enterprise_btn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      92deg,
+      rgba(94, 106, 210, 0.2) 15.83%,
+      rgba(23, 23, 23, 0.2) 63.01%
+    );
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.support_left {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(27, 27, 27, 0) 0%,
+    #1b1b1b 49.48%
+  );
+}
+.support_right {
+  background: transparent;
+}
+.most_btn {
+  background: linear-gradient(
+      37deg,
+      rgba(195, 140, 245, 0.28) 11.56%,
+      rgba(0, 0, 0, 0) 86.3%
+    ),
+    linear-gradient(
+      222deg,
+      rgba(255, 255, 255, 0.2) 8.7%,
+      rgba(0, 0, 0, 0) 37.9%
+    );
+
+  box-shadow: 0px 1px 0px 0px #ffffff0f inset;
+  box-shadow: 0px 4px 10px 0px #0000004d;
+}
+.pro {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(195, 140, 245, 0.2) 0%,
+    rgba(26, 26, 26, 0.2) 100%
+  );
+}
+.seen div a {
+  display: block !important;
+  margin-top: 20px;
+}
+
+.seen {
+  display: block !important;
+  position: relative;
+  top: 20%;
+  padding: 20px 0px;
+  width: 100%;
+  height: 400px !important;
+  z-index: 99;
+  background-color: var(--background);
+  text-align: center;
+}
+.seen div{
+  display: block !important;
+  width: 100% !important;
+  text-align: center;
+}
