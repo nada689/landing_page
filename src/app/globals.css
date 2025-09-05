@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: black;
+  --foreground: white;
   --sub: rgba(255, 255, 255, 0.5);
   --btns: rgba(255, 255, 255, 0.04);
   --border: #1f1f1f;
@@ -17,12 +17,6 @@
   --color-border: var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
